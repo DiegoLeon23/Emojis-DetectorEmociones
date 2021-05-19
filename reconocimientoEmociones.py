@@ -12,8 +12,8 @@ def emotionImage(emotion):
 
 # ----------- Métodos usados para el entrenamiento y lectura del modelo ----------
 #method = 'EigenFaces'
-#method = 'FisherFaces'
-method = 'LBPH'
+method = 'FisherFaces'
+#method = 'LBPH'
 
 if method == 'EigenFaces': emotion_recognizer = cv2.face.EigenFaceRecognizer_create()
 if method == 'FisherFaces': emotion_recognizer = cv2.face.FisherFaceRecognizer_create()

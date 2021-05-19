@@ -5,7 +5,7 @@ import imutils
 #emotionName = 'Enojo'
 #emotionName = 'Felicidad'
 #emotionName = 'Sorpresa'
-emotionName = 'Tristeza'
+#emotionName = 'Tristeza'
 
 dataPath = 'D:/MiniProyectos_Python/Emoji-Emociones/data' #Cambia a la ruta donde hayas almacenado Data
 emotionsPath = dataPath + '/' + emotionName
@@ -16,7 +16,7 @@ if not os.path.exists(emotionsPath):
 
 cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 
-faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
+faceClassif = cv2.CascadeClassifier('D:/Anaconda/Library/etc/haarcascades/haarcascade_frontalface_alt.xml')
 count = 0
 
 while True:
